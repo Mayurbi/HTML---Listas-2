@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercicios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/heart3.png">
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            margin: auto;
+
+        }
+        
+        th {
+            border: 1px solid black;
+            margin: auto;
+
+        }
+
+        .label2 {
+            display: inline-block;
+            width: auto;
+            margin-bottom: 7px;
+
+        }
+
+
+        label {
+            display: inline-block;
+            width: 60px;
+            margin-bottom: 7px;
+
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+
+    <h2>Exercício 1 - Tabela</h2>
+
+    <table>
+
+        <tr>
+            <th colspan="2">Estados</th>
+            <th>Cidades</th>
+        </tr>
+
+        <tr>
+            <td rowspan="13">Sudeste</td>
+            <td rowspan="3">São Paulo</td>
+            <td>São Paulo</td>
+        </tr>
+
+        <tr>
+            <td>Guarulhos</td>
+        </tr>
+
+        <tr>
+            <td>Campinas</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Rio de Janeiro</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+
+        <tr>
+            <td>São Gonçalo</td>
+        </tr>
+
+        <tr>
+            <td>Duque de Caixias</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Minas Gerais</td>
+            <td>Belo Horizonte</td>
+        </tr>
+
+        <tr>
+            <td>Uberlândia</td>
+        </tr>
+
+        <tr>
+            <td>Contagem</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Espírito Santo</td>
+        </tr>
+
+        <tr>
+            <td>Vila Velha</td>
+        </tr>
+
+        <tr>
+            <td>Serra</td>
+        </tr>
+
+        <tr>
+            <td>Cariacica</td>
+        </tr>
+        <td rowspan="10">Sul</td>
+        <td rowspan="3">Rio Grande do Sul</td>
+        <td>Porto Alegre</td>
+
+        <tr>
+            <td>Caixias do Sul</td>
+        </tr>
+
+        <tr>
+            <td>Pelotas</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Paraná</td>
+            <td>Curitiba</td>
+        </tr>
+
+        <tr>
+            <td>Londrina</td>
+        </tr>
+
+        <tr>
+            <td>Maringá</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Santa Catarina</td>
+            <td>Joinville</td>
+        </tr>
+
+        <tr>
+            <td>Florianópolis</td>
+        </tr>
+
+        <tr>
+            <td>Blumenau</td>
+        </tr>
+    </table>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <h2>Exercício 2 - Acesso</h2>
+    <form name="Acesso" method="get" action="logar">
+        <fieldset>
+
+            <legend>Acesso</legend>
+            <label for="idUsuario">Usuário:</label>
+            <input type="text" name="usuario" id="idUsuario"><br>
+            <label for="idSenha">Senha:</label>
+            <input type="password" name="senha" id="idSenha" maxlength="12"><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+    </form>
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <h2>Exercício 3 - Preferências</h2>
+    <form name="Preferencias" method="get" action="Cadastrar"></form>
+        <fieldset>
+
+            <legend>Preferências</legend>
+            <label for="idNome">Nome: </label>
+            <input type="text" name="nome" id="idNome">
+
+            <label for="idEmail">Email: </label>
+            <input type="text" name="Email" id="idEmail"> <br>
+
+            <label class="label2" for="idCor">Cor Favorita: </label>
+            <select name="corFavorita" id="idCor">
+                <option value="Default">----------------------------------</option>
+                <option value="azul">Azul</option>
+                <option value="preto">Preto</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="verde">Verde</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="branco">Branco</option>
+            </select> <br> <br>
+           
+            <legend>Manequim:</legend> 
+
+            <input type="radio" name="tamanho" id="idP" value="P">
+            <label for="idP">Pequeno</label> <br>
+            
+            <input type="radio" name="manequim" id="idM" value="M">
+            <label for="idM">Média</label> <br>
+            
+            <input type="radio" name="manequim" id="idG" value="G">
+            <label for="idG">Grande</label> <br>
+            
+            <input type="radio" name="manequim" id="idEg" value="Eg">
+            <label for="idEg">Extra Grande</label> <br>
+
+            <legend>Estilo Preferido:</legend>
+
+            <input type="CheckBox" name="estilo" id="idDespojado">
+            <label for="idDespojado">Despojado</label> <br>
+
+            <input type="CheckBox" name="estilo" id="idCasual">
+            <label for="idCasual">Casual</label> <br>
+
+            <input type="CheckBox" name="estilo" id="idEsporte">
+            <label for="idEsporte">Esporte</label> <br>
+
+            <input type="CheckBox" name="estilo" id="idSocial">
+            <label for="idSocial">Social</label> <br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+       
+        </fieldset>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <h2>Exercício 4 - Agenda de Contato</h2>
+
+        <fieldset>
+
+            <form name="Agenda" method="Post"action="Agendar"></form>
+
+            <legend>Agenda</legend>
+            <label for="idNome">Nome: </label>
+            <input type="text" name="nome" id="idNome">
+
+            <label for="idEmail">Email: </label>
+            <input type="text" name="Email" id="idEmail"> <br>
+
+            <legend>Tipo de Email:</legend>
+
+            <input type="radio" name="tipoEmail" id="idComercial" value="Cm">
+            <label for="idComercial">Comercial</label>
+            
+            <input type="radio" name="tipoEmail" id="idPessoal" value="Pessoal">
+            <label for="idPessoal">Pessoal</label> <br>
+
+            <label for="idCargo">Cargo:</label>
+            <select name="cargo" id="idCargo">
+                <option value="Default">---------------------------------</option>
+                <option value="presidente">Presidente</option>
+                <option value="vicepresidente">Vice-Presidente</option>
+                <option value="diretor">Diretor</option>
+                <option value="gerente">Gerente</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="assistente">Assistente</option>
+            </select> <br> <br>
+
+            <label for="idEmpresa">Empresa:</label> 
+            <input type="text" name="empresa" id="idEmpresa"><br>
+
+            <label class="label2" for="idTelComercial">Tel. Comercial:</label> 
+            <input type="text" name="telCom" id="idTelComercial"> <br>
+
+            <label class="label2" for="idTelCelular">Tel. Celular:</label> 
+            <input type="text" name="telCel" id="idTelCelular"> <br>
+
+            <legend>Tipo de Contato:</legend>
+
+            <input type="CheckBox" name="tipoContato" id="idComercial">
+            <label for="idPessoal">Comercial</label> <br>
+
+            <input type="CheckBox" name="tipoContato" id="idPessoal">
+            <label for="idPessoal">Pessoal</label> <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <h2>Exercício 5 - Inscrição de Evento</h2>
+
+        <fieldset>
+            <form name="Evento" method="Post" action="inscrever"></form>
+
+            <legend>Inscrições</legend>
+
+            <label for="idNome">Nome: </label>
+            <input type="text" name="nome" id="idNome"> <br>
+
+            <label for="idEmail">Email: </label>
+            <input type="text" name="Email" id="idEmail"> <br>
+
+            <label for="idTelefone">Telefone: </label>
+            <input type="text" name="telefone" id="idTelefone"> <br>
+
+
+            <label class="label2" for="idTelefone">Data de Nascimento: </label>
+            <input class="label2" type="date" name="dataNasc" id="idDataNascto"> <br>
+
+            <label for="idEmpresa">Empresa:</label> 
+            <input type="text" name="empresa" id="idEmpresa"><br>
+
+            <legend>Cargo:</legend>
+            <input type="radio" name="cargo" id="idCargo" value="PS">
+            <label for="idCargo">Proprietatio/Sócio</label> <br>
+            
+            <input type="radio" name="cargo" id="idCargo" value="P">
+            <label for="idM">Presidencia</label> <br>
+            
+            <input type="radio" name="cargo" id="idCargo" value="D">
+            <label for="idG">Diretoria</label> <br>
+            
+            <input type="radio" name="cargo" id="idCargo" value="G">
+            <label for="idEg">Gerencia</label> <br>
+
+            <input type="radio" name="cargo" id="idCargo" value="S">
+            <label for="idEg">Supervisão</label> <br>
+
+            <input type="radio" name="cargo" id="idCargo" value="O">
+            <label for="idEg">Outro</label> <br>
+
+            <label for="idCidade">Cidade: </label>
+            <input type="text" name="cidade" id="idCidade"> <br>
+
+            <label for="idUF">UF:</label>
+            <select name="uf" id="idUF">
+                <option value="Default">---------------------------------</option>
+                <option value="UF32">32 - Espírito Santo</option>
+                <option value="UF11">11 - São Paulo</option>
+                <option value="UF25">25 - Paraíba</option>
+                <option value="UF33">33 - Rio de Janeiro</option>
+                <option value="UF29">29 - Bahia</option>
+                <option value="UF43">43 - Rio Grande do Sul</option>
+            </select> <br> <br>
+
+            <legend>Como ficou sabendo do evento?</legend>
+
+            <input type="CheckBox" name="tipoContato" id="idComercial">
+            <label for="idComoFicousabendo">Revistas</label> <br>
+
+            <input type="CheckBox" name="tipoContato" id="idPessoal">
+            <label for="idComoFicousabendo">Jornais</label> <br>
+
+            <input type="CheckBox" name="tipoContato" id="idPessoal">
+            <label for="idComoFicousabendo">Televisão</label> <br>
+
+            <input type="CheckBox" name="tipoContato" id="idPessoal">
+            <label for="idComoFicousabendo">Internet</label> <br>
+
+            <input type="CheckBox" name="tipoContato" id="idPessoal">
+            <label for="idComoFicousabendo">Patrocinadores</label> <br>
+
+            <input type="CheckBox" name="tipoContato" id="idPessoal">
+            <label for="idComoFicousabendo">Outros</label> <br>
+
+            <legend>Qual interesse no evento?</legend>
+
+            <input type="CheckBox" name="ficouSabendo" id="idQualInteresse">
+            <label for="idQualInteresse">Palestras</label> <br>
+
+            <input type="CheckBox" name="ficouSabendo" id="idQualInteresse">
+            <label for="idQualInteresse">Worshops</label> <br>
+
+            <input type="CheckBox" name="ficouSabendo" id="idQualInteresse">
+            <label for="idQualInteresse">Estandes</label> <br>
+
+            <input type="CheckBox" name="ficouSabendo" id="idQualInteresse">
+            <label for="idQualInteresse">Treinamentos</label> <br>
+           
+            <input type="CheckBox" name="ficouSabendo" id="idQualInteresse">
+            <label for="idQualInteresse">Outros</label> <br>
+
+            <label class="label2" for="idnomeCracha">Nome Crachá:</label>
+            <input type="text" name="nomeCracha" id="idnomeCracha"> <br>
+
+            <input type="CheckBox" name="infoEmail" id="idInfosEmail">
+            <label class="label2" for="idInfosEmail">Deseja receber informações por email?</label> 
+
+            <input type="CheckBox" name="infoSMS" id="idInfosEmail">
+            <label class="label2" for="idInfosSMS">Deseja receber informações por email?</label> <br>
+
+            <label class="label2" for="story">Comentarios gerais:</label> <br>
+
+            <textarea id="idComentariosGerais" name="comentariosGerais" rows="10" cols="70"></textarea> <br>
+   
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+</body>
+
+</html>
